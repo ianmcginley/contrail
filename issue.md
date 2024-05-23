@@ -23,7 +23,6 @@ and the reason it's only written to ZooKeeper is this:
     # ip_set/reset_in_use do not persist to DB just internal bitmap maintenance
     # (for e.g. for notify context)
     # ip_reserve/alloc/free persist to DB
-...
     def ip_reserve(self, ipaddr, value):
         ip = IPAddress(ipaddr)
         req = int(ip)
