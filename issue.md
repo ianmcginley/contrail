@@ -32,6 +32,8 @@ and the reason it's only written to ZooKeeper is this:
             return str(IPAddress(addr*self.alloc_unit))
         return None
     # end ip_reserve
+
+
 The comments give it away, do not persist to DB, just internal bitmap maintenance (eg: in ZooKeeper.
 [10:15 am] McGinley, Ian
 now to try and trace back the calculation of new_dns_addr
